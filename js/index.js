@@ -10,4 +10,10 @@ btnDonate.addEventListener('click', function(){
     const newBalance = prevAmount + donationAmount;
     // console.log(newBalance)
     document.getElementById('donated-money').innerText = newBalance;
+
+    const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
+
+    const newMainBalance = mainBalance - donationAmount;
+    // console.log(newMainBalance)
+    document.getElementById('main-balance').innerText = newMainBalance;
 });
