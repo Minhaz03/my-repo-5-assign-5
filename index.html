@@ -48,8 +48,8 @@
 
         <!-- donation history button -->
         <div class="flex justify-center gap-4 p-10 backdrop-blur-sm">
-            <a href="#main"><button class="btn btn-active">Donation</button></a>
-            <button class="btn btn-active">History</button>
+            <a href="#main"><button id="btn-donation" class="btn btn-active hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donation</button></a>
+            <button id="btn-history" class="btn btn-active text-xl">History</button>
         </div>
     </header>
 
@@ -162,12 +162,14 @@
                         </div>
                     </div>
                 </dialog>
-            </div> </main>
-        
-        <!-- history of donation -->
-        <section class="mt-24">
+            </div>
+    </main>
 
-        </section>
+    <!-- history of donation -->
+    <div class="p-10 rounded-lg bg-base-200 gap-6 mb-24 max-w-screen-xl mx-auto">
+        <div class=" text-xl font-bold text-center">Donation History</div>
+        <div id="history-container" class="flex justify-start ml-2 space-y-3 text-black"></div>
+    </div>
 
     </main>
 
@@ -180,6 +182,7 @@
     <script src="js/blog.js"></script>
     <script src="js/function.js"></script>
     <script src="js/card2.js"></script>
+    <script src="js/history-tab.js"></script>
 </body>
 
 </html>
