@@ -10,7 +10,7 @@
     <!-- Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://kit.fontawesome.com/04049ccd6c.js" crossorigin="anonymous"></script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@
     </header>
 
     <main class="max-w-screen-xl mx-auto my-24">
-
+        <h1 class="text-5xl font-bold justify-start ml-4 mb-10">Important Q&A <i class="fa-solid fa-feather"></i></h1>
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What is the DOM?</div>
@@ -76,8 +76,10 @@
             <div class="collapse-title text-xl font-medium">How do you change the text content of an element?</div>
             <div class="collapse-content">
                 <p>You can use the textContent property to change the text content of an element. <br>
-                    <span class="font-bold">For example:</span> const element = document.getElementById("myElement"); <br>
-                    element.textContent = "New text content";</p>
+                    <span class="font-bold">For example:</span> const element = document.getElementById("myElement");
+                    <br>
+                    element.textContent = "New text content";
+                </p>
             </div>
         </div>
         <br>
@@ -85,10 +87,12 @@
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you add a new element to the DOM?</div>
             <div class="collapse-content">
-                <p>You can use the createElement() method to create a new element and then append it to the DOM using methods like appendChild(). <br>
+                <p>You can use the createElement() method to create a new element and then append it to the DOM using
+                    methods like appendChild(). <br>
                     <span class="font-bold">For example:</span> const newElement = document.createElement("p"); <br>
                     newElement.textContent = "This is a new paragraph."; <br>
-                    document.body.appendChild(newElement);</p>
+                    document.body.appendChild(newElement);
+                </p>
             </div>
         </div>
         <br>
@@ -96,9 +100,11 @@
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium"> How do you remove an element from the DOM?</div>
             <div class="collapse-content">
-                <p>You can use the removeChild() method to remove an element from the DOM. <br>  
-                    <span class="font-bold">For example:</span> const elementToRemove = document.getElementById("elementToRemove"); <br>
-                elementToRemove.parentNode.removeChild(elementToRemove);</p>
+                <p>You can use the removeChild() method to remove an element from the DOM. <br>
+                    <span class="font-bold">For example:</span> const elementToRemove =
+                    document.getElementById("elementToRemove"); <br>
+                    elementToRemove.parentNode.removeChild(elementToRemove);
+                </p>
             </div>
         </div>
         <br>
@@ -106,7 +112,9 @@
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">What is event handling in JavaScript?</div>
             <div class="collapse-content">
-                <p>Event handling in JavaScript allows you to respond to user interactions with HTML elements, such as clicks, mouseovers, and form submissions. You can attach event listeners to elements using methods like addEventListener() and define functions to handle the events.</p>
+                <p>Event handling in JavaScript allows you to respond to user interactions with HTML elements, such as
+                    clicks, mouseovers, and form submissions. You can attach event listeners to elements using methods
+                    like addEventListener() and define functions to handle the events.</p>
             </div>
         </div>
         <br>
