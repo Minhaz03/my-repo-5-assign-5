@@ -3,3 +3,4 @@ document.getElementById('btn-blog').addEventListener('click', function(){
 
     window.location.href = '/my-repo-5-assign-5/blog.html';
 });
+

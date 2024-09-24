@@ -4,8 +4,12 @@ btnDonateCard2.addEventListener('click', function(){
     const mainBalance = getTextFieldValueById('main-balance');
     const donateInput = getInputFieldValueById('input-btn-card-2');
     const donationCollected = getTextFieldValueById('donated-money-added');
-    if (donateInput < 0){
+    if (donateInput < 0 ){
         return alert('Try Valid Number')
+    }
+    else{
+        const click = document.getElementById('btn-card-2');
+        click.onclick = my_modal_2.showModal();
     }
     // console.log(donateInput, donationCollected)
 

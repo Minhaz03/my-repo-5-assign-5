@@ -7,6 +7,10 @@ btnDonate.addEventListener('click', function(){
     if (donationAmount < 0){
         return alert('Try Valid Number')
     }
+    else{
+        const click = document.getElementById('btn-card-1');
+        click.onclick = my_modal_1.showModal();
+    }
     
     const prevAmount = parseFloat(document.getElementById('donated-money').innerText);
     // console.log(prevAmount)
@@ -22,6 +26,12 @@ btnDonate.addEventListener('click', function(){
     if (newMainBalance < 0){
         return alert('Something Wrong Please Try Again Later')
     }
+    
     // console.log(newMainBalance)
     document.getElementById('main-balance').innerText = newMainBalance;
+
+
+    const historyItem = document.createElement("div");
+    historyItem.className = 'bg-white p-3 w-full border-2 border-black';
+    
 });

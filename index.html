@@ -48,12 +48,13 @@
 
         <!-- donation history button -->
         <div class="flex justify-center gap-4 p-10 backdrop-blur-sm">
-            <a href="#main"><button id="btn-donation" class="btn btn-active hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donation</button></a>
+            <a href="#main"><button id="btn-donation"
+                    class="btn btn-active hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donation</button></a>
             <button id="btn-history" class="btn btn-active text-xl">History</button>
         </div>
     </header>
 
-    <main class="max-w-screen-xl mx-auto">
+    <main id="card-box" class="max-w-screen-xl mx-auto">
         <!-- card-1 -->
         <div class="grid grid-cols-2 border rounded-2xl bg-[#FFFFFF] gap-8 px-8 py-8 mb-8">
             <img class="w-full" src="./assets/noakhali.png" alt="">
@@ -72,8 +73,8 @@
                 <input id="donation-input" type="number" placeholder="Write Donation Amount"
                     class="input input-bordered w-full" /> <br>
                 <!-- donate button modal -->
-                <button id="btn-card-1" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold"
-                    onclick="my_modal_1.showModal()">Donate Now</button>
+                <button id="btn-card-1" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donate
+                    Now</button>
                 <dialog id="my_modal_1" class="modal">
                     <div class="modal-box">
                         <h3 class="text-3xl font-black text-center">Congrates</h3>
@@ -135,7 +136,7 @@
             <div>
                 <button class="btn w-2/5 mb-6">
                     <img src="./assets/coin.png" alt="">
-                    <p class="text-xl font-medium text-[#111111B3]">1000</p>
+                    <p id="donated-add-money" class="text-xl font-medium text-[#111111B3]">1000</p>
                     <p>BDT</p>
                 </button>
                 <h2 class="text-2xl font-bold mb-6">Aid for Injured in the Quota Movement</h2>
@@ -145,9 +146,9 @@
                     receive the care and support they need during this challenging time. Every donation plays a vital
                     role in alleviating their suffering and aiding in their recovery. Please consider making a donation
                     to support these brave individuals in their time of need.</p>
-                <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" /> <br>
-                <button class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold"
-                    onclick="my_modal_3.showModal()">Donate Now</button>
+                <input id="input-btn-card-3" type="number" placeholder="Write Donation Amount"
+                    class="input input-bordered w-full" /> <br>
+                <button id="btn-card-3" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donate Now</button>
                 <dialog id="my_modal_3" class="modal">
                     <div class="modal-box">
                         <h3 class="text-3xl font-black text-center">Congrates</h3>
@@ -163,12 +164,15 @@
                     </div>
                 </dialog>
             </div>
+        </div>
     </main>
 
     <!-- history of donation -->
     <div class="p-10 rounded-lg bg-base-200 gap-6 mb-24 max-w-screen-xl mx-auto">
-        <div class=" text-xl font-bold text-center">Donation History</div>
-        <div id="history-container" class="flex justify-start ml-2 space-y-3 text-black"></div>
+        <h3 class=" text-xl font-bold text-center">Donation History</h3>
+        <div id="history-container" class="flex justify-start ml-2 space-y-3 text-black">
+            
+        </div>
     </div>
 
     </main>
@@ -182,6 +186,7 @@
     <script src="js/blog.js"></script>
     <script src="js/function.js"></script>
     <script src="js/card2.js"></script>
+    <script src="js/card-3.js"></script>
     <script src="js/history-tab.js"></script>
 </body>
 
