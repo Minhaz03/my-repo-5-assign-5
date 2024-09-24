@@ -1,13 +1,12 @@
 const btnDonate = document.getElementById('btn-card-1'); 
 btnDonate.addEventListener('click', function () { 
     const donationAmount = parseFloat(document.getElementById('donation-input').value); 
-      
+     const location = document.getElementById("btn-card-1").parentElement.querySelector("h2").textContent; 
     // validation for input donation 
     if (isNaN(donationAmount) || donationAmount <= 0) { 
         return alert('Please enter a valid donation amount'); 
     } 
      
-    
     // Show modal 
     my_modal_1.showModal(); 
  
@@ -27,8 +26,6 @@ btnDonate.addEventListener('click', function () {
  
     document.getElementById('main-balance').innerText = newMainBalance; 
  
-    const location = document.getElementById("btn-card-1").parentElement.querySelector("h2").textContent;
-    
     const historyItem = document.createElement("div"); 
     historyItem.className = 'bg[#FFFFFF] p-3 gap-6 border-2 border-black'; 
  
