@@ -26,19 +26,19 @@
     <header class="sticky top-0">
         <nav>
             <!-- blog button -->
-            <div class="navbar bg-[#F9F7F3] px-20 py-14">
-                <div class="navbar-start">
+            <div class="navbar bg-[#F9F7F3] px-20 py-14 grid grid-cols-2 lg:flex">
+                <div class="">
                     <a id="btn-blog" class="btn btn-active hover:bg-[#B4F461] bg-[#B4F461] text-xl">Blog</a>
                 </div>
 
                 <!-- donation bangladesh -->
-                <div class="navbar-center gap-4 lg:flex lg:justify-center">
+                <div class="mr-24 navbar-center gap-4 lg:-mr-28 lg:mx-auto">
                     <img class="w-14 h-14" src="./assets/logo.png" alt="">
                     <h2 class="text-2xl font-bold">Donate Bangladesh</h2>
                 </div>
 
                 <!-- coin bdt -->
-                <div class="navbar-end gap-3">
+                <div class="mt-10 ml-24 gap-3 flex justify-center mx-auto lg:navbar-end lg:gap-3 lg:mx-auto lg:my-auto">
                     <img src="./assets/coin.png" alt="">
                     <h2 id="main-balance" class="text-xl font-medium text-[#111111B3]">5000</h2>
                     <p>BDT</p>
@@ -56,10 +56,10 @@
 
     <main id="card-box" class="max-w-screen-xl mx-auto">
         <!-- card-1 -->
-        <div class="grid grid-cols-2 border rounded-2xl bg-[#FFFFFF] gap-8 px-8 py-8 mb-8">
-            <img class="w-full" src="./assets/noakhali.png" alt="">
-            <div>
-                <button class="btn w-2/5 mb-6">
+        <div class="lg:grid lg:grid-cols-2 border rounded-2xl bg-[#FFFFFF] lg:gap-8 lg:px-8 lg:py-8 mb-8">
+            <img class="lg:w-full lg:my-auto w-4/5 mx-auto my-5" src="./assets/noakhali.png" alt="">
+            <div class="lg:block lg:mx-auto lg:my-auto ml-10 mr-10">
+                <button class="btn lg:w-2/5 w-3/4 mb-6">
                     <img src="./assets/coin.png" alt="">
                     <p id="donated-money" class="text-xl font-medium text-[#111111B3]">1000</p>
                     <p>BDT</p>
@@ -71,9 +71,9 @@
                     this disaster. Every contribution, big or small, makes difference. Please join us in supporting the
                     relief efforts and making a positive impact on the lives of those in need.</p>
                 <input id="donation-input" type="number" placeholder="Write Donation Amount"
-                    class="input input-bordered w-full" /> <br>
+                    class="input input-bordered w-full" required min="1"/> <br>
                 <!-- donate button modal -->
-                <button id="btn-card-1" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donate
+                <button id="btn-card-1" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate
                     Now</button>
                 <dialog id="my_modal_1" class="modal">
                     <div class="modal-box">
@@ -93,10 +93,10 @@
         </div>
 
         <!-- card-2 -->
-        <div class="grid grid-cols-2 border rounded-2xl bg-[#FFFFFF] gap-8 px-8 py-8 mb-8">
-            <img class="h-max w-full" src="./assets/feni.png" alt="">
-            <div>
-                <button class="btn w-2/5 mb-6">
+        <div class="lg:grid lg:grid-cols-2 border rounded-2xl bg-[#FFFFFF] lg:gap-8 lg:px-8 lg:py-8 mb-8">
+            <img class="h-max lg:w-full lg:my-auto w-4/5 mx-auto my-5" src="./assets/feni.png" alt="">
+            <div class="lg:block lg:mx-auto lg:my-auto ml-10 mr-10">
+                <button class="btn lg:w-2/5 w-3/4 mb-6">
                     <img src="./assets/coin.png" alt="">
                     <p id="donated-money-added" class="text-xl font-medium text-[#111111B3]">1000</p>
                     <p>BDT</p>
@@ -110,8 +110,7 @@
                     in urgent need.</p>
                 <input id="input-btn-card-2" type="number" placeholder="Write Donation Amount"
                     class="input input-bordered w-full" /> <br>
-                <button id="btn-card-2" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold"
-                    onclick="my_modal_2.showModal()">Donate Now</button>
+                <button id="btn-card-2" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate Now</button>
                 <dialog id="my_modal_2" class="modal">
                     <div class="modal-box">
                         <h3 class="text-3xl font-black text-center">Congrates</h3>
@@ -131,10 +130,10 @@
         </div>
 
         <!-- card-3 -->
-        <div class="grid grid-cols-2 border rounded-2xl bg-[#FFFFFF] gap-8 px-8 py-8 mb-24">
-            <img class="h-full w-full" src="./assets/quota-protest.png" alt="">
-            <div>
-                <button class="btn w-2/5 mb-6">
+        <div class="lg:grid lg:grid-cols-2 border rounded-2xl bg-[#FFFFFF] lg:gap-8 lg:px-8 lg:py-8 mb-8">
+            <img class="h-full lg:w-full lg:my-auto w-4/5 mx-auto my-5" src="./assets/quota-protest.png" alt="">
+            <div class="lg:block lg:mx-auto lg:my-auto ml-10 mr-10">
+                <button class="btn lg:w-2/5 w-3/4 mb-6">
                     <img src="./assets/coin.png" alt="">
                     <p id="donated-add-money" class="text-xl font-medium text-[#111111B3]">1000</p>
                     <p>BDT</p>
@@ -148,7 +147,7 @@
                     to support these brave individuals in their time of need.</p>
                 <input id="input-btn-card-3" type="number" placeholder="Write Donation Amount"
                     class="input input-bordered w-full" /> <br>
-                <button id="btn-card-3" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donate Now</button>
+                <button id="btn-card-3" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate Now</button>
                 <dialog id="my_modal_3" class="modal">
                     <div class="modal-box">
                         <h3 class="text-3xl font-black text-center">Congrates</h3>
@@ -168,10 +167,10 @@
     </main>
 
     <!-- history of donation -->
-    <div class="p-10 rounded-lg bg-base-200 gap-6 mb-24 max-w-screen-xl mx-auto">
-        <h3 class=" text-xl font-bold text-center">Donation History</h3>
-        <div id="history-container" class="flex justify-start ml-2 space-y-3 text-black">
-            
+    <div id="history-section" class="hidden p-10 rounded-lg bg-base-200 gap-6 mb-24 max-w-screen-xl mx-auto w-full shrink-0 shadow-2xl">
+        <h3 class=" text-xl font-bold text-center mb-5">Donation History</h3>
+        <div id="history-container" class="grid gap-3 grid-cols-2 lg:grid-cols-1 gap-y-4 ml-2 text-black">
+
         </div>
     </div>
 

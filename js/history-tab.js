@@ -7,6 +7,8 @@ btnHistory.addEventListener('click', function () {
     btnDonation.classList.remove('hover:bg-[#B4F461]', 'bg-[#B4F461]', 'font-bold')
 
     document.getElementById('card-box').classList.add('hidden')
+    document.getElementById('history-section').classList.remove('hidden')
+
 
 });
 
@@ -19,4 +21,6 @@ btnDonationTab.addEventListener('click', function () {
     btnHistoryTab.classList.remove('hover:bg-[#B4F461]', 'bg-[#B4F461]', 'font-bold')
 
     document.getElementById('card-box').classList.remove('hidden')
+    document.getElementById('history-section').classList.add('hidden')
+
 });
