@@ -24,27 +24,19 @@
 
 <body id="lexend-font">
     <header class="sticky top-0">
-        <nav>
-            <!-- blog button -->
-            <div class="navbar bg-[#F9F7F3] px-20 py-14 grid grid-cols-2 lg:flex">
-                <div class="">
-                    <a id="btn-blog" class="btn btn-active hover:bg-[#B4F461] bg-[#B4F461] text-xl">Blog</a>
-                </div>
-
-                <!-- donation bangladesh -->
-                <div class="mr-24 navbar-center gap-4 lg:-mr-28 lg:mx-auto">
-                    <img class="w-14 h-14" src="./assets/logo.png" alt="">
-                    <h2 class="text-2xl font-bold">Donate Bangladesh</h2>
-                </div>
-
-                <!-- coin bdt -->
-                <div class="mt-10 ml-24 gap-3 flex justify-center mx-auto lg:navbar-end lg:gap-3 lg:mx-auto lg:my-auto">
-                    <img src="./assets/coin.png" alt="">
-                    <h2 id="main-balance" class="text-xl font-medium text-[#111111B3]">5000</h2>
-                    <p>BDT</p>
-                </div>
+        <nav class="grid grid-cols-2 lg:inline-grid lg:grid-cols-3 navbar bg-neutral text-neutral-content bg-[#F9F7F3] px-20 py-14">
+            <div class="navbar-start">
+              <button id="btn-blog" class="btn text-xl hover:bg-[#B4F461] bg-[#B4F461] font-black">Blog</button>
             </div>
-        </nav>
+            <div class="navbar-center flex items-center gap-3">
+              <img src="./assets/logo.png" alt="Donate Bangladesh" class="h-12 w-12 mr-2">
+              <h1 class="text-2xl font-bold text-black pr-2">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end flex items-center mt-10 ml-24 gap-3 justify-center mx-auto">
+              <img src="./assets/coin.png" alt="5000 BDT" class="h-8 w-8 mr-2">
+              <p class="text-xl font-semibold text-black">5000 BDT</p>
+            </div>
+          </nav>
 
         <!-- donation history button -->
         <div class="flex justify-center gap-4 p-10 backdrop-blur-sm">
@@ -71,9 +63,10 @@
                     this disaster. Every contribution, big or small, makes difference. Please join us in supporting the
                     relief efforts and making a positive impact on the lives of those in need.</p>
                 <input id="donation-input" type="number" placeholder="Write Donation Amount"
-                    class="input input-bordered w-full" required min="1"/> <br>
+                    class="input input-bordered w-full" required min="1" /> <br>
                 <!-- donate button modal -->
-                <button id="btn-card-1" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate
+                <button id="btn-card-1"
+                    class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate
                     Now</button>
                 <dialog id="my_modal_1" class="modal">
                     <div class="modal-box">
@@ -110,7 +103,9 @@
                     in urgent need.</p>
                 <input id="input-btn-card-2" type="number" placeholder="Write Donation Amount"
                     class="input input-bordered w-full" /> <br>
-                <button id="btn-card-2" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate Now</button>
+                <button id="btn-card-2"
+                    class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate
+                    Now</button>
                 <dialog id="my_modal_2" class="modal">
                     <div class="modal-box">
                         <h3 class="text-3xl font-black text-center">Congrates</h3>
@@ -147,7 +142,8 @@
                     to support these brave individuals in their time of need.</p>
                 <input id="input-btn-card-3" type="number" placeholder="Write Donation Amount"
                     class="input input-bordered w-full" /> <br>
-                <button id="btn-card-3" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold mb-5 lg:mb-0">Donate Now</button>
+                <button id="btn-card-3" class="btn w-full mt-6 hover:bg-[#B4F461] bg-[#B4F461] text-xl font-bold">Donate
+                    Now</button>
                 <dialog id="my_modal_3" class="modal">
                     <div class="modal-box">
                         <h3 class="text-3xl font-black text-center">Congrates</h3>
@@ -167,7 +163,8 @@
     </main>
 
     <!-- history of donation -->
-    <div id="history-section" class="hidden p-10 rounded-lg bg-base-200 gap-6 mb-24 max-w-screen-xl mx-auto w-full shrink-0 shadow-2xl">
+    <div id="history-section"
+        class="hidden p-10 rounded-lg bg-base-200 gap-6 mb-24 max-w-screen-xl mx-auto w-full shrink-0 shadow-2xl">
         <h3 class=" text-xl font-bold text-center mb-5">Donation History</h3>
         <div id="history-container" class="grid gap-3 grid-cols-2 lg:grid-cols-1 gap-y-4 ml-2 text-black">
 
